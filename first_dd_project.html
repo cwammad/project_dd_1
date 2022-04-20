@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Luxurious+Roman&family=Oxygen:wght@300&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
 	<style>
 		*, *::before, *::after{
@@ -15,6 +16,7 @@
 
 		body{
 			background-color: #A9A9A9 ;
+			
 		}
 		h1{
 			font-family: 'Signika Negative', sans-serif;
@@ -37,13 +39,14 @@
 			display: inline;
 			
 		}
-		input, label{
-			display: inline;
 
+		.class_2{
+			height: 500px;
 		}
+		
+		
 
-		p{
-			display: block;
+		.class_1{
 			text-align: center;
 			margin: auto;
 			margin-bottom: 40px;
@@ -56,15 +59,19 @@
 			transition: 300ms transform ease-in-out;
 			box-shadow: 2px 2px 5px 0 rgba(0, 0, 12, .2);
 
+
 			}
 
-		p:hover{
+		.class_1:hover{
 			transform: scale(1.065);
 		}
 
 			.adjustment{
 				width: 325px;
 			}
+		button{
+			display: block;
+		}
 
 	</style>
 	<title>Log In Page</title>
@@ -72,22 +79,23 @@
 <body>
 
      <h1>Simple Log In Page</h1>
+     <div class="class_2">
 	<form>
 
-		<p><label>Email: </label>
-		<input type="email" name="Email"></p>
+		<div class="class_1"><label>Email: </label>
+		<input type="email" name="Email" placeholder="abcd@example.com"></div>
 		
-		<p><label>Name: </label>
-		<input type="text" name="user_name"></p>
+		<div class="class_1"><label>Name: </label>
+		<input type="text" name="user_name" placeholder="User name"></div>
 
-		<p class="adjustment"><label>Phone Number: </label>
-		<input type="tel" name="phone_number"></p>
+		<div class="adjustment class_1"><label>Phone Number: </label>
+		<input type="tel" name="phone_number" placeholder="123-456-789"></div>
 
-		<p><label>Address: </label>
-		<input type="text" name="address"></p>
+		<div class="class_1"><label>Address: </label>
+		<input type="text" name="address" placeholder="Address"></div>
 
-		<p><input type="button" name="" value="submit entries"></p>
+		<button class="class_1">Submit Entries</button>
 	</form>
-
+ </div>
 </body>
 </html>
