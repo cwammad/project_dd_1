@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Lora:ital,wght@1,500&family=Luxurious+Roman&family=Oxygen:wght@300&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<style>
 		*, *::before, *::after{
 			box-sizing: border-box;
@@ -16,26 +17,29 @@
 
 		body{
 			
-			background-image: linear-gradient(to right,  #ffb3ff, #ffccff);
+		 background-color: 	 #141452;
 			
 		}
 		h1{
+
 			font-family: 'IBM Plex Mono', monospace;
 			font-size: 26px;
 			background-color: white;
-			color: #b300b3;
-			width: 300px;
+			color: #141452;
+			padding-top: 20px;
+			width: auto;
 			object-position: center;
 			text-align: center;
 			position: relative;
 			margin: auto;
 			border-radius: 4px;
-			box-shadow: 4px 2px 5px 0 rgba(0, 0, 12, .2);
+			
 
 		}
 
 		h1:hover{
-			background-color: #b300b3;
+			background-color: #141452;
+			box-shadow: 2px 2px 5px 0 rgba(0, 0, 12, .2);
 			color: white;
 		}
 
@@ -51,12 +55,13 @@
 		.class_2{
 			height: 500px;
 			
-			width: 350px;
+			width: 370px;
+			height: 475px;
 			margin: auto;
-			margin-top: 20px;
+			margin-top: 50px;
 			border-radius: 0.5rem;
 			box-shadow: 2px 2px 5px 0 rgba(0, 0, 12, .2);
-			background-image: linear-gradient( #ff33ff, #660066);
+			background-color: #FFFFFF;
 		}
 		
 		
@@ -64,16 +69,18 @@
 		.class_1{
 			text-align: center;
 			margin: auto;
-			margin-bottom: 40px;
-			background-color: #FFFAFA;
+
+			margin-bottom: 25px;
+			
 			padding: 9px 0px 9px 0px;
-			width: 250px;
+			width: 300px;
 			font-size: 15px;
 			border-radius: 0.5rem;
 			transition: 300ms transform ease-in-out;
-			box-shadow: 2px 2px 5px 0 rgba(0, 0, 12, .2);
+			
 			font-size: 15px;
 			font-weight: bold;
+
 
 
 			}
@@ -81,7 +88,8 @@
 		.class_1:hover{
 			transform: scale(1.065);
 			background-color: #FFFFFF;
-			color: #b300b3;
+			color: #141452;
+			position: relative;
 		}
 
 			.adjustment{
@@ -90,31 +98,64 @@
 		button{
 			display: block;
 			border: none;
+
+		}
+		p.position_1{
+			position: absolute;
+               left: 64%;
+               top: 77%;
+               font-weight: bold;
+               font-size: 17px;
 		}
 
+		input.boxes{
+			
+		     
+			padding: 2.9px;
+			border-radius: 0.4rem;
+			border-width: thin;
+			border-color:#141452;
+			height: 30px;
+			width: 200px;
+			
+		}
+          div.position_2{
+          	position: relative;
+          }
+          span{
+          	position: absolute;
+          	top: 28%;
+          	left: 28%;
+          }
+          .material-symbols-outlined: hover{
+             display: none;
+          }
 	</style>
 	<title>Log In Page</title>
 </head>
 <body>
 
-     <h1>Simple Log In Page</h1>
+     
      <div class="class_2">
+     	<h1>Simple Login</h1>
 	<form>
 
-		<div class="class_1"><label>Email: </label>
-		<input type="email" name="Email" placeholder="abcd@example.com"></div>
+		<div class="class_1 position_2"><label>Email: </label>
+		<input class="boxes" type="email" name="Email" placeholder="    abcd@example.com">
+	<span class="material-symbols-outlined">mail</span></div>
 		
-		<div class="class_1"><label>Name: </label>
-		<input type="text" name="user_name" placeholder="User name"></div>
+		<div class="class_1 position_2"><label>Name: </label>
+		<input class="boxes" type="text" name="user_name" placeholder="    User name"><span class="material-symbols-outlined">person</span></div>
 
-		<div class="adjustment class_1"><label>Phone Number: </label>
-		<input type="tel" name="phone_number" placeholder="123-456-789"></div>
+		<div class="adjustment class_1 position_2" style="width: 345px;"><label>Phone Number: </label>
+		<input class="boxes" type="tel" name="phone_number" placeholder="    123-456-789"><span class="material-symbols-outlined" style="left: 39%">tag</span></div>
 
-		<div class="adjustment class_1"><label>Address: </label>
-		<input type="text" name="address" placeholder="Address"></div>
+		<div class="adjustment class_1 position_2"><label>Address: </label>
+		<input class="boxes" type="text" name="address" placeholder="    Address"><span class="material-symbols-outlined" style="left: 32%">home</span></div>
 
-		<button class="class_1">Submit Entries</button>
+		<button class="class_1" style="background-color: #141452; color: white;">Submit Entries</button>
 	</form>
+	<p class="position_1">Sign Up</p>
  </div>
 </body>
 </html>
